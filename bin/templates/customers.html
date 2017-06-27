@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title> Customers</title>
+</head>
+<body>
+
+<div th:each="customer: ${customerAsCollection}">
+<p th:text="${customer.buildFullName()}"></p>
+</div>
+</body>
+</html>
